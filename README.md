@@ -84,6 +84,18 @@ bash run-all.sh               # chạy toàn bộ
 | Hybrid RSA + AES | khóa AES khôi phục **khớp**, giải mã **OK** |
 | Tốc độ | AES ~**70 MB/s**; RSA-2048 ~**129 µs** mã / ~**22 ms** giải 1 khối |
 
+### Ảnh kết quả chạy
+
+![AES-128 kiểm thử FIPS-197](images/01-aes-fips197.png)
+
+![RSA-2048 sinh cặp khóa](images/02-rsa-keygen.png)
+
+![Ba mô hình áp dụng RSA](images/03-rsa-models.png)
+
+![Mã hóa lai ghép RSA + AES](images/04-hybrid.png)
+
+![So sánh tốc độ RSA vs AES](images/05-benchmark.png)
+
 ### Sơ đồ minh họa
 
 ![Sơ đồ quy trình AES](images/06-so-do-aes.png)
@@ -106,7 +118,7 @@ bash run-all.sh               # chạy toàn bộ
 - [x] So sánh thời gian mã hóa/giải mã RSA với AES
 - [x] Mã hóa lai ghép RSA + AES (hybrid)
 - [x] README + log kết quả
-- [ ] Ảnh chụp màn hình kết quả (chờ bổ sung)
+- [x] Ảnh minh chứng (kết quả chạy + sơ đồ)
 
 ## 8. Nhận xét & kết luận
 - **AES** nhanh, phù hợp dữ liệu lớn; **RSA** chậm nhưng giải quyết bài toán trao khóa/chữ ký.

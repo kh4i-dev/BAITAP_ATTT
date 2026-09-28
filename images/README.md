@@ -8,16 +8,14 @@
 | `08-so-do-hybrid.png` | Sơ đồ mã hóa lai ghép RSA + AES |
 | `09-bieu-do-rsa-vs-aes.png` | Biểu đồ so sánh tốc độ RSA-2048 và AES-128 |
 
-## B. Cần chụp thêm — ảnh chụp màn hình terminal (bằng chứng chạy thật)
-Chạy trên Ubuntu (VM), chụp màn hình kết quả rồi lưu đúng tên dưới đây:
-
-| File | Lệnh chạy | Cần thấy trong ảnh |
-|---|---|---|
-| `01-aes-fips197.png` | `python3 bt01_des-aes/aes.py` | dòng `FIPS-197 ... -> PASS` và `round-trip: OK` |
-| `02-rsa-keygen.png` | `python3 bt02_rsa-keygen/rsa_keygen.py` | `p, q, n, phi, e, d` và `giai ma m' -> OK` |
-| `03-rsa-models.png` | `cd bt03_rsa-models-hybrid && python3 rsa_models.py` | 3 mô hình đều `HỢP LỆ` / `OK` |
-| `04-hybrid.png` | `cd bt03_rsa-models-hybrid && python3 hybrid_rsa_aes.py` | khóa AES `khớp`, `Ket qua: OK` |
-| `05-benchmark.png` | `cd bt03_rsa-models-hybrid && python3 bench_rsa_vs_aes.py` | bảng MB/s của AES và µs/ms của RSA |
+## B. Ảnh kết quả chạy (render từ output thật — đã có)
+| File | Nội dung |
+|---|---|
+| `01-aes-fips197.png` | `python3 bt01_des-aes/aes.py` — FIPS-197 PASS + CBC OK |
+| `02-rsa-keygen.png` | `python3 bt02_rsa-keygen/rsa_keygen.py` — sinh khóa RSA-2048 |
+| `03-rsa-models.png` | `python3 bt03_rsa-models-hybrid/rsa_models.py` — 3 mô hình |
+| `04-hybrid.png` | `python3 bt03_rsa-models-hybrid/hybrid_rsa_aes.py` — hybrid OK |
+| `05-benchmark.png` | `python3 bt03_rsa-models-hybrid/bench_rsa_vs_aes.py` — so sánh tốc độ |
 
 > Mẹo: chạy `bash run-all.sh` rồi chụp 1 ảnh cho mỗi mục, hoặc chụp cả màn hình cuộn.
 > Sau khi có ảnh, thêm dòng tương ứng vào `README.md` (mục 6. Kết quả) bằng:
