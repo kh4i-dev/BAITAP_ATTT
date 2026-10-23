@@ -84,12 +84,22 @@ Log chạy đầy đủ: [`evidence/BAI1-2-3-KETQUA.md`](evidence/BAI1-2-3-KETQU
 Ứng dụng **console** (C#/.NET): sinh khóa AES-256, lưu/đọc khóa ra file, mã hóa–giải mã
 văn bản, mã hóa file, và test file lớn hàng GB (đo thời gian + so sánh từng byte).
 
+![Mã hóa và giải mã văn bản](Bai1_AES/images/02-ma-hoa-van-ban.png)
+
+![Test file lớn 1 GB và so sánh từng byte](Bai1_AES/images/03-test-file-1gb.png)
+
 Chi tiết: [`Bai1_AES/README.md`](Bai1_AES/README.md)
 
 ### Bài 2 — Mã hóa RSA ([`Bai2_RSA/`](Bai2_RSA/))
 Ứng dụng **Windows Forms**: sinh cặp khóa RSA, xuất/đọc PEM, mã hóa–giải mã dữ liệu nhỏ,
 đo tốc độ public key vs private key, băm SHA-256, và chữ ký số (kèm đề xuất dùng
 RSA-PSS để mỗi lần ký ra một chữ ký khác nhau).
+
+![Sinh cặp khóa và xuất PEM](Bai2_RSA/images/01-sinh-khoa-pem.png)
+
+![Đo tốc độ public key vs private key](Bai2_RSA/images/05-do-toc-do.png)
+
+![Chữ ký số RSA-PSS — mỗi lần ký khác nhau](Bai2_RSA/images/08-chu-ky-pss.png)
 
 Chi tiết: [`Bai2_RSA/README.md`](Bai2_RSA/README.md)
 
