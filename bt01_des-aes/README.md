@@ -41,18 +41,6 @@ python3 aes.py
 
 ### Kết quả chạy (kiểm thử bằng vector chuẩn FIPS-197)
 
-```text
-FIPS-197 vector:
-  plaintext : 00112233445566778899aabbccddeeff
-  key       : 000102030405060708090a0b0c0d0e0f
-  ciphertext: 69c4e0d86a7b0430d8cdb78070b4c55a
-  expect    : 69c4e0d86a7b0430d8cdb78070b4c55a -> PASS
-
-CBC demo:
-  plaintext : Xin chao, day la minh hoa ma hoa AES-128-CBC!
-  ciphertext: ea2038ccb9b07e59db030a8b3dec0e29326d6e958fa98bd32b60cc7201e0bf3d...
-  decrypt   : Xin chao, day la minh hoa ma hoa AES-128-CBC!
-  round-trip: OK
-```
+![Chạy aes.py — kiểm thử FIPS-197 và CBC](../images/01-aes-fips197.png)
 
 > Bản `aes.py` này viết bằng Python thuần để **học thuật toán** nên chậm; khi cần tốc độ thực tế dùng thư viện chuẩn (xem benchmark ở `bt03_rsa-models-hybrid`).

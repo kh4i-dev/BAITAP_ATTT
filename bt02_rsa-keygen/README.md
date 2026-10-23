@@ -27,20 +27,6 @@ python3 rsa_keygen.py
 
 ## 4. Kết quả chạy (RSA-2048)
 
-```text
-=== SINH CAP KHOA RSA-2048 ===
-p (bi mat, so nguyen to): 1131584948740925752900152870405280230081 ...
-q (bi mat, so nguyen to): 1012199331372755350627722613022255391177 ...
-n = p*q (cong khai)      : 1145389528507038683739183344448573185351 ...
-phi(n) = (p-1)(q-1)      : ...
-e (cong khai)            : 65537
-d = e^-1 mod phi         : 5903727401768125903948855360402948288932 ...
--> PUBLIC (e,n) , PRIVATE (d,n)
-
-=== THU MA HOA / GIAI MA ===
-ban ro   m : 123456789
-ban ma   c : 10326593124364460637469581181289204786953785363276 ...
-giai ma  m': 123456789 -> OK
-```
+![Chạy rsa_keygen.py — sinh khóa RSA-2048](../images/02-rsa-keygen.png)
 
 > Để tăng độ an toàn: `p`, `q` phải là số nguyên tố ngẫu nhiên đủ lớn (≥ 1024 bit mỗi số) và **khác nhau**; `n` nên ≥ 2048 bit.
