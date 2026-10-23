@@ -5,3 +5,17 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+
+# .NET build output
+bin/
+obj/
+*.user
+
+# file sinh ra khi chay Bai1_AES / Bai2_RSA (khong can dua len git)
+Bai1_AES/aes_key.txt
+Bai1_AES/file_nguon.bin
+Bai1_AES/file_mahoa.bin
+Bai1_AES/file_giaima.bin
+Bai2_RSA/public.pem
+Bai2_RSA/private.pem
+Bai2_RSA/data_mahoa.txt
